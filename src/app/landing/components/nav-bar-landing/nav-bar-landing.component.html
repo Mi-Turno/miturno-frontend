@@ -1,0 +1,21 @@
+<nav class="nav">
+  <a (click)="navegar('hero')" class="logo">
+    <img [src]="urlIcono" alt="icono" />
+    <span>Mi turno</span>
+  </a>
+
+  <ul class="navbar">
+    <li><a (click)="navegar('hero')">Inicio</a></li>
+    <li><a (click)="navegar('introduccion')">Sobre nosotros</a></li>
+    <li><a (click)="navegar('beneficios')">Servicios</a></li>
+    <li><a (click)="navegar('precios')">Precios</a></li>
+    <li><a (click)="navegar('contacto')">Contacto</a></li>
+  </ul>
+
+  <div class="main">
+    <a [href]="loginHref">
+      <!-- <mat-icon class="user">{{ iconos.person }}</mat-icon> -->
+      <span>Iniciar Sesion</span>
+    </a>
+  </div>
+</nav>
