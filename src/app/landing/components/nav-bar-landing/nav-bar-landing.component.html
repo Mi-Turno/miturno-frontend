@@ -1,20 +1,20 @@
 <nav class="nav">
-  <a (click)="navegar('hero')" class="logo">
+  <a class="logo" (click)="navegar('hero')">
     <img [src]="urlIcono" alt="icono" />
     <span>Mi turno</span>
   </a>
 
   <ul class="navbar">
-    <li><a (click)="navegar('hero')">Inicio</a></li>
-    <li><a (click)="navegar('introduccion')">Sobre nosotros</a></li>
-    <li><a (click)="navegar('beneficios')">Servicios</a></li>
-    <li><a (click)="navegar('precios')">Precios</a></li>
-    <li><a (click)="navegar('contacto')">Contacto</a></li>
+    <li><a (click)="navegar('intro')">Sobre nosotros</a></li>
+    <li><a (click)="navegar('benefits')">Beneficios</a></li>
+    <li><a (click)="navegar('features')">Caracteristicas</a></li>
+    <li><a (click)="navegar('pricing')">Precios</a></li>
+    <li><a (click)="navegar('contact')">Contacto</a></li>
   </ul>
 
   <div class="main">
     <a [href]="loginHref">
-      <!-- <mat-icon class="user">{{ iconos.person }}</mat-icon> -->
+      <mat-icon class="user">{{ iconos.person }}</mat-icon>
       <span>Iniciar Sesion</span>
     </a>
   </div>

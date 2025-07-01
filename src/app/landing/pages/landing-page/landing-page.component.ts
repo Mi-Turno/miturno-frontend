@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
-import { BeneficiosComponent } from '../../components/beneficios/beneficios.component';
-import { CaracteristicasComponent } from '../../components/caracteristicas/caracteristicas.component';
 import { PreciosComponent } from '../../components/precios/precios.component';
 import { CtaComponent } from '../../components/cta/cta.component';
 import { ContactoComponent } from '../../components/contacto/contacto.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { HeroComponent } from '../../components/hero/hero.component';
-import { IntroduccionComponent } from '../../components/introduccion/introduccion.component';
 import { NavBarLandingComponent } from '../../components/nav-bar-landing/nav-bar-landing.component';
+import { BenefitsComponent } from "../../components/benefits/benefits.component";
+import { IntroComponent } from "../../components/intro/intro.component";
+import { FeaturesComponent } from "../../components/features/features.component";
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [BeneficiosComponent,CaracteristicasComponent, PreciosComponent, CtaComponent, ContactoComponent, FooterComponent, HeroComponent, IntroduccionComponent, NavBarLandingComponent],
+  imports: [BenefitsComponent, PreciosComponent, CtaComponent, ContactoComponent, FooterComponent, HeroComponent, NavBarLandingComponent, BenefitsComponent, IntroComponent, FeaturesComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.css'
 })

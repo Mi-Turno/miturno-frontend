@@ -1,9 +1,9 @@
 /* Sección de Llamadas a la Acción */
-#cta {
+.cta {
   padding: 60px 20px;
   text-align: center;
-  background: var(--main-color);
-  color: #ffffff;
+  background: var(--primary-color);
+  color: var(--text-light);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12,14 +12,14 @@
 }
 
 /* Título del CTA */
-#cta h2 {
+.cta h2 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 /* Descripción del CTA */
-#cta p {
+.cta p {
   font-size: 1.2rem;
   margin-bottom: 30px;
   max-width: 600px;
@@ -27,7 +27,7 @@
 }
 
 /* Contenedor de los botones para mejor alineación */
-#cta .cta-buttons-container {
+.cta .cta-buttons-container {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -38,7 +38,7 @@
 .cta-button {
   display: inline-block;
   background-color: #ffffff;
-  color: #007BFF;
+  color: var(--primary-color);
   padding: 15px 30px;
   font-size: 1rem;
   text-decoration: none;
@@ -50,7 +50,7 @@
 
 /* Efecto hover para los botones */
 .cta-button:hover {
-  background-color: #0056b3;
-  color: #ffffff;
+  background-color: var(--secondary-color);
+  color: var(--text-light);
   transform: translateY(-3px);
 }

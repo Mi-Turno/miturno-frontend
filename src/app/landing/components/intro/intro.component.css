@@ -7,7 +7,7 @@ body {
 }
 
 /* Sección de Introducción */
-#introduccion {
+.intro {
   padding: 50px 20px;
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -19,22 +19,22 @@ body {
 }
 
 
-#introduccion img {
+.intro img {
   width: 500px;
   height: 350px;
   margin-left: 50px ;
 }
 
-#introduccion h1 {
+.intro h1 {
   font-size: 2.5rem;
   color: #333;
   margin-bottom: 20px;
-  border-bottom: 1px solid var(--color-texto);
+  border-bottom: 1px solid var(--text-dark);
 }
 
-#introduccion p {
+.intro p {
   font-size: 1.2rem;
-  color: var(--color-texto);
+  color: var(--text-dark);
   max-width: 800px;
   margin: 0 auto;
   padding: 0 15px;

@@ -1,5 +1,4 @@
-
-.caracteristicas-container {
+.features {
   padding: 50px 20px;
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -11,7 +10,7 @@
   vertical-align: center;
 
 }
-.imagen-container {
+.img-container {
   height: 350px;
   width: 500px;
   display: flex;
@@ -20,13 +19,13 @@
   vertical-align: center;
 }
 
-.imagen-destacada {
+img {
     width: 500px;
   height: 350px;
   margin-right: 50px ;
 }
 
-.contenido-container {
+.features-container {
   flex: 1;
   padding: 20px;
   background: #ffffff;
@@ -35,7 +34,7 @@
 
 }
 
-.contenido-container h2 {
+.features-container h2 {
   font-size: 2.5rem;
   color: #333;
   margin-bottom: 20px;
@@ -44,19 +43,19 @@
   border-bottom: 1px solid var(--color-texto);
 }
 
-.contenido-container ul {
+.features-container ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.contenido-container li {
+.features-container li {
   margin-bottom: 15px;
   padding: 0 15px;
   font-size: 1.2rem;
   color: #555555;
 }
 
-.contenido-container li strong {
+.features-container li strong {
   color: #222222;
 }

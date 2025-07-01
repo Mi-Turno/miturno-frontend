@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-// import { ICONOS } from '../../../../shared/models/iconos.constants';
 import { MatIcon } from '@angular/material/icon';
 import { Router } from '@angular/router';
+import { ICONOS } from '../../../shared/utils/iconos.constants';
 
 @Component({
   selector: 'app-nav-bar-landing',
@@ -11,47 +11,25 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav-bar-landing.component.css']
 })
 export class NavBarLandingComponent {
-  // iconos = ICONOS;
+   iconos = ICONOS;
 
   urlBase: string = "landing-page/";
   urlIcono: string = "icono.png";
-  heroHref: string = `#hero`;
-  sobreNosotrosHref: string = `#introduccion`;
-  beneficioHref: string = `#beneficios`;
-  preciosHref: string = `#precios`;
-  contactoHref: string = `#contacto`;
   loginHref: string = "login";
 
   constructor(private router: Router) {}
 
-  navegar(sectionId: string): void {
-    const rutaActual = this.router.url.split('#')[0]; //ruta actual
-    const ruta = this.obtenerRutaDesdeLaSeccion(sectionId);
+navegar(sectionId: string): void {
+  this.deslizar(sectionId);
+}
 
-    if (rutaActual !== ruta) {
-      this.router.navigate([ruta]).then(() => {
-        this.deslizar(sectionId);
-      });
-    } else {
-      this.deslizar(sectionId);
-    }
+private deslizar(sectionId: string, intentos: number = 0): void {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else if (intentos < 20) {
+    setTimeout(() => this.deslizar(sectionId, intentos + 1), 50);
   }
+}
 
-  private deslizar(sectionId: string): void {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });//deslizar hacia el elemento
-    }
-  }
-
-  private obtenerRutaDesdeLaSeccion(sectionId: string): string {
-    const rutas: { [key: string]: string } = {
-      hero: 'landing-page', //ruta por defecto
-      introduccion: 'landing-page',
-      beneficios: 'landing-page',
-      precios: 'landing-page',
-      contacto: 'landing-page',
-    };
-    return rutas[sectionId] || 'landing-page';
-  }
 }
