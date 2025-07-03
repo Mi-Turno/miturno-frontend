@@ -1,1 +1,41 @@
-<p>contact works!</p>
+<!-- Formulario de suscripción o contacto -->
+<section class="contact">
+  <h2>Contacto</h2>
+  <form  [formGroup]="formularioContacto" class="contact-form">
+
+	<mat-form-field>
+		<mat-label>Nombre</mat-label>
+		<input matInput placeholder="Nombre" formControlName = "name">
+    	<mat-icon matPrefix>person</mat-icon>
+		<mat-hint></mat-hint>
+	</mat-form-field>
+
+	<mat-form-field>
+		<mat-label>Nombre del negocio</mat-label>
+		<input matInput placeholder="Nombre de tu negocio" formControlName = "bussines">
+    	<mat-icon matPrefix>business</mat-icon>
+		<mat-hint></mat-hint>
+	</mat-form-field>
+
+	<mat-form-field>
+		<mat-label>Correo</mat-label>
+		<input matInput placeholder="Correo" formControlName="email">
+    	<mat-icon matPrefix>email</mat-icon>
+		<mat-hint></mat-hint>
+	</mat-form-field>
+
+	<mat-form-field>
+  	   <mat-label>Mensaje</mat-label>
+	   	<mat-icon matPrefix>chat</mat-icon>
+	   <textarea matInput placeholder="Mensaje" rows="4" formControlName = "message"></textarea>
+	</mat-form-field>
+
+
+	<button matFab extended class="send-message">
+  		<mat-icon>send</mat-icon>
+  		Enviar
+	</button>
+	
+  </form>
+</section>
+

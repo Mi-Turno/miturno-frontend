@@ -1,0 +1,61 @@
+/* Sección de Contacto */
+.contact {
+  padding: 60px 20px;
+  background-color: #f3f4f6;
+  text-align: center;
+  height: 100vh;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el formulario */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilo para etiquetas y campos de entrada */
+.contact-form label {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 5px;
+  text-align: left;
+  display: block;
+}
+
+
+textarea{
+  background-color: #eee;
+  border: none;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 150px;
+  min-height: 80px;
+}
+
+
+.send-message{
+	background-color: var(--primary-color);
+	color: var(--text-light);
+}
+
+mat-form-field{
+	  width: 100%;
+}
