@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+  margin: 2vh 3vh 2vh 1.5vh;
+  width: 82vw;
+  height: 6vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-background);
+}
+
+.fecha{
+  margin-right: 25px ;
+  font-size: var(--titulo-h4);
+}
+
