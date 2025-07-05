@@ -1,1 +1,60 @@
-<p>sidebar works!</p>
+<nav class="sidebar-container">
+  <div class="main-container">
+  <div class="profile-picture-container">
+    <img src="/imagenMarron-removebg.png" alt="" class="profile-picture" />
+  </div>
+
+  <div class="account-container">
+    <mat-icon color="primary">account_circle</mat-icon>
+    <span class="branch-name">Negocio</span>
+  </div>
+
+  <hr />
+
+  <div class="nav-list">
+    <div
+      (click)="navigateTo('/appointments')"
+      [ngClass]="{ active: isActive('appointments') }"
+    >
+      <a> <mat-icon>event_note</mat-icon> Turnos </a>
+    </div>
+
+    <div
+      (click)="navigateTo('/history')"
+      [ngClass]="{ active: isActive('history') }"
+    >
+      <a> <mat-icon>history</mat-icon> Historial </a>
+    </div>
+
+    <div
+      (click)="navigateTo('/services')"
+      [ngClass]="{ active: isActive('services') }"
+    >
+      <a> <mat-icon>room_service</mat-icon> Servicios </a>
+    </div>
+
+    <div
+      (click)="navigateTo('/professionals')"
+      [ngClass]="{ active: isActive('professionals') }"
+    >
+      <a> <mat-icon>badge</mat-icon> Profesionales </a>
+    </div>
+
+    <div
+      (click)="navigateTo('/settings')"
+      [ngClass]="{ active: isActive('settings') }"
+    >
+      <a> <mat-icon>settings</mat-icon> Configuración </a>
+    </div>
+  </div>
+
+  <hr />
+</div>
+
+
+  <div class="logout-container nav-list">
+    <a routerLink="/logout" class="logout-button"
+      ><mat-icon>logout</mat-icon> Salir</a
+    >
+  </div>
+</nav>

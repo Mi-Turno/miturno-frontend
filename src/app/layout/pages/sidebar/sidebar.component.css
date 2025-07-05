@@ -1,0 +1,110 @@
+
+
+
+.sidebar-container {
+  width: 250px;
+  height: 96vh;
+  background-color: var(--base-200);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  margin: 2vh 1.5vh 2vh 3vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.profile-picture-container{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+ .profile-picture {
+   	object-fit: fill;
+	height: 80px;
+	width: 130px;
+  	margin-bottom: 10px;
+  	color: var(--primary-color, #333);
+}
+
+.account-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	margin: 20px 0;
+}
+
+.branch-name{
+	font-size: var(--font-size-lg);
+}
+
+.sidebar-container hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 15px 0;
+}
+
+.sidebar-container .nav-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+ a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-size: var(--font-size-md);
+}
+
+ .nav-list a:hover{
+  background-color: rgba(121, 134, 255, 0.3);
+}
+
+
+.nav-list mat-icon {
+  margin-right: 10px;
+}
+
+.nav-list .active {
+  background-color: var(--base-500);
+  color: var(--text-dark);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.logout-container{
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.logout-container:hover {
+  color: red;
+  transition: color 0.2s;
+}
+
+.main-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
